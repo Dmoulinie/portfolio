@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/synthese.css">
     <link rel="icon" href="../img/favicon.ico"/>
-    <title>Sytnthese de stage 1ere année - Portfolio Dan</title>
+    <title>Synthèse de stage 1ere année - Portfolio Dan</title>
 </head>
 <body>
     <nav>
@@ -15,7 +15,7 @@
             <li><a href="index.html" title="Accueil">Accueil</a></li>
             <li><a href="leBTS.html" title="Etudes">Le BTS</a></li>
             <li><a href="index.html" title="Veille">Veille</a></li>
-            <li><a href="synthese1.html" title="Veille">Synthese premiere année</a></li>
+            <li><a href="synthese1.html" title="Veille">Synthèse premiere année</a></li>
             <li><a href="cv.html" title="C.V">Curriculum Vitae</a></li>
             <li><a href="index.html" title="Contact">Contact</a></li>
         </ul>
@@ -78,21 +78,38 @@
     <div id="presentationApp" class="title centrer">
         <p>Présentation</p>
     </div>
-<!--  a refaire en bas la -->
+<!--  a refaire en bas la  // trop de hover-->
+    <div id="presentationCapteur">
 
-    <div id="presentationAppText">
-        <img src="../img/services.png">
-        <p>
-            L’objet de mon stage était l’amélioration d’une application web développée en Java/Jsp avec une base de données MySQL(DAO).
-            Elle est nommée Capteur et permet de réunir plusieurs services sous forme de cercle/carte.
-        </p>
+        <div class="containerReunion">
+            <img src="../img/services.png">
+        
+            <div class="overlayReunion">
+                L’objet de mon stage était l’amélioration d’une application web développée en Java/Jsp avec une base de données MySQL(DAO).
+                Elle est nommée Capteur et permet de réunir plusieurs services sous forme de cercle/carte.
+            
+            </div>
+        </div>
+        
+        
+        
+        <div class="containerReunion">
+            <img src="../img/reunion.png" alt="">
+            <div class="overlayReunion">
+                Chaque membre est stocké dans un annuaire et peut être assigné à un cercle selon l’administrateur du cercle.
+                Chacun de ces cercles peuvent créer des réunions et les membres peuvent voter avec 3 couleurs (vert,orange,rouge) pour donner son ressenti de la semaine
+            </div>
+        </div>
     </div>
+        
+<div class="title centrer">
+    <p>Organisation de l’application : </p>
+</div>
+
+<div>
+    <img src="../img/MVC.png" alt="">
+</div>
 
 
-
-    <div id="exempleReunion">
-        <img src="../img/reunion.png">
-    </div>
-    
 </body>
 </html>

@@ -12,13 +12,14 @@
 }
 
 #presentationAppText img {
-    padding: 0 0 0 8em;
+    margin: 0 0 0 8em;
     width: 40vw;
     filter: invert(10%);
     user-select: none;
     align-items: center;
     justify-content: center;
     display: flex;
+    border-radius: 5%;
 }
 
 #presentationAppText {
@@ -81,11 +82,14 @@
 
 #logiciels img {
     border-radius:50%;
-    width:150px;
+    max-width:150px;
+    min-width: 50px;
     height: 150px;
     z-index:1;
     user-select: none;
 }
+
+
 
 
 
@@ -121,6 +125,8 @@
     transform: scale(1.01);
 }
 
+
+
 .text {
     color: white;
     font-size: 20px;
@@ -131,18 +137,49 @@
     text-decoration: none;
 }
 
-#exempleReunion {
+
+
+#presentationCapteur {
+    display: flex;
     margin: 0 auto;
-    max-width: fit-content;
+    justify-content: center;
+    gap:150px;
 }
 
-#exempleReunion img {
-    width: 1000px;
-    height: 500px;
+
+.containerReunion {
+    margin-top:50px;
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    position: relative;
+
+}
+
+.containerReunion img {
     border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: invert(10%);
+    user-select: none;
 }
 
+.overlayReunion {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    transition: .5s ease;
+    width: fit-content;
+    opacity:0;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
 
-
-
-
+.containerReunion:hover .overlayReunion {
+    opacity: 1;
+}
