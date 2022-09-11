@@ -1,0 +1,148 @@
+#contexte p {
+    color:rgba(238, 230, 230, 0.87);
+    font-size:1.2vw;
+    margin:0 auto;
+    margin-top:15px;
+    max-width: 25vw;
+    min-width: 25vw;
+    font-family: 'Courier New', monospace;
+    text-align:justify;
+    text-justify: inter-word;
+    padding-bottom: 5vh;
+}
+
+#presentationAppText img {
+    padding: 0 0 0 8em;
+    width: 40vw;
+    filter: invert(10%);
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#presentationAppText {
+    display: flex;
+    height:400px;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    align-items: center;
+
+}
+
+#presentationAppText p {
+    color:rgba(238, 230, 230, 0.87);
+    font-size:1.5vw;
+    margin:0 auto;
+    margin-top:15px;
+    width: 25vw;
+    font-family: 'Courier New', monospace;
+    text-align:justify;
+    text-justify: inter-word;
+    padding-bottom: 5vh;
+}
+
+
+.title {
+    font-size:3vw;
+    /* font-family: 'Courier New', monospace; */
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.125em;
+}
+
+#bar1 {
+    width: 350px;
+    height: 4px;
+    background-color:#525e65;
+    position: absolute;
+    margin-top:4vh;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+.centrer {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#logiciels {
+    margin-top: 10vh;
+    display:flex;
+    flex-direction: row;
+    gap:50px;
+    z-index:1;
+
+}
+
+#logiciels img {
+    border-radius:50%;
+    width:150px;
+    height: 150px;
+    z-index:1;
+    user-select: none;
+}
+
+
+
+
+.overlay {
+    opacity: 0;
+}
+
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #242a36;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+#exempleReunion {
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+#exempleReunion img {
+    width: 1000px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+
+
+
+
