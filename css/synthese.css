@@ -27,27 +27,8 @@
     border-radius: 5%;
 }
 
-#presentationAppText {
-    display: flex;
-    height:400px;
-    flex-direction: row;
-    flex-flow: row wrap;
-    align-content: flex-start;
-    align-items: center;
 
-}
 
-#presentationAppText p {
-    color:rgba(238, 230, 230, 0.87);
-    font-size:1.5vw;
-    margin:0 auto;
-    margin-top:15px;
-    width: 25vw;
-    font-family: 'Courier New', monospace;
-    text-align:justify;
-    text-justify: inter-word;
-    padding-bottom: 5vh;
-}
 
 
 .title {
@@ -192,6 +173,9 @@
 }
 
 
+#titleModif {
+
+}
 
 #listModif {
     display:flex;
@@ -218,8 +202,9 @@
 .textNormal {
     color:rgba(238, 230, 230, 0.87);
     font-size:1.4rem;
-    margin:0 auto;
+    margin:10px auto;
     margin-top:15px;
+
     max-width: 50rem;
     font-family: 'Courier New', monospace;
     text-align:justify;
@@ -316,11 +301,12 @@ footer {
     
     }
 
-
-
-
     .imgCentrer {
         width: 300px;
+    }
+
+    .containerReunion {
+    width: 70%;
     }
 }
 
@@ -376,6 +362,10 @@ footer {
         font-size:0.75rem;
     }
 
+    .containerReunion {
+        width: 80%;
+        }
+
 }
 
 
@@ -400,17 +390,75 @@ footer {
         max-width: 20rem;
     }
     .texteListeModif {
-        font-size:0.65rem;
+        font-size:0.7rem;
     }
+
+    .containerReunion {
+        width: 90%;
+        }
     
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:430px) {
+    .presentationAppText {
+        margin-top:1em;
+        display: flex;
+        width: 100%;
+    }
+
+    .presentationAppText p {
+        margin:0 auto;
+        justify-content: center;
+        text-align: center;
+    }
+
     #logiciels img {
         width: 45px;
         height: 45px;
     }
     .texteListeModif {
-        font-size:0.6rem;
+        padding: 0 25px 0 25px;
+        font-size:1rem;
+    }
+    #titleStage {
+        display: flex;
+        margin:1rem auto;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+    }
+    #titleStage p {
+        margin:0 auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #titleModif {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width:350px) {
+
+    .smallText {
+        max-width: 60vw;
+        font-size:1rem;
+    }
+
+    .textNormal {
+        font-size:0.8rem;
+        max-width: 15rem;
+    }
+    .presentationAppText {
+        margin-top:410em;
+        align-items: justify;
+        display: flex;
+        margin:0 auto;
+        align-items: justify;
+        width: 250px;
     }
 }
