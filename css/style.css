@@ -22,7 +22,7 @@ ul li {
     font-family: 'Roboto', sans-serif;
     list-style-type: none;
     color:#cfdccb;
-    font-size: 1.15vw;
+    font-size: 20px;
 }
 
 ul li a {
@@ -55,24 +55,36 @@ ul li:first-child {
     padding-top:5vh;
     margin:0 auto;
     max-width: max-content;
-    font-size:8vw;
+    font-size:15rem;
     color:rgba(238, 230, 230, 0.87);
-    font-family: 'Source Code Pro', monospace;
 }
 
+#title #name {
+    font-size:10rem;
+    font-family: 'Source Code Pro', monospace!important;
+
+}
+
+
 #title p {
-    font-size:2vw;
+    font-size:1rem;
     justify-content: center;
     margin: 0 auto;
+    font-family: 'Courier New', monospace;
+
+}
+
+#title #subtitleName {
+    font-size:2rem;
+    font-family: 'Courier New', monospace!important;
 }
 
 #description p{
     color:rgba(238, 230, 230, 0.87);
-    font-size:1.2vw;
+    font-size:1.5rem;
     margin:0 auto;
     margin-top:4vh;
-    max-width: 25vw;
-    min-width: 25vw;
+    max-width: 30rem;
     font-family: 'Courier New', monospace;
     text-align:justify;
     text-justify: inter-word;
@@ -80,9 +92,9 @@ ul li:first-child {
 
 #descriptionBTS p {
     color:rgba(238, 230, 230, 0.89);
-    font-size:1.2vw;
+    font-size:1.2rem;
     margin:0 auto;
-    max-width: 45vw;
+    max-width: 50vw;
     min-width: 25vw;
     font-family: 'Courier New', monospace;
     text-align:justify;
@@ -119,7 +131,7 @@ ul li:first-child {
 
 .button {
     background-color: #58f0b3;
-    font-size:1.2vw;
+    font-size:1rem;
     border:none;
     border-radius: 6px;
     padding:10px;
@@ -147,7 +159,7 @@ ul li:first-child {
 
 #titleOptions p {
     color:rgba(238, 230, 230, 0.89);
-    font-size:3vw;
+    font-size:2.5rem;
     font-family: 'Courier New', monospace;
 }
 
@@ -172,7 +184,6 @@ ul li:first-child {
 
 
 
-
 .cards {
     display:flex;
     margin: 3vh auto;
@@ -187,7 +198,11 @@ ul li:first-child {
     width: 15vw;
     height: 400px;
     perspective: 1000px;
-    }
+}
+
+
+
+
 
 .flip-card-inner {
   position: relative;
@@ -246,7 +261,7 @@ ul li:first-child {
 }
 
 .card-title {
-    font-size:1.35vw;
+    font-size:1rem;
     margin: 0 auto;
     max-width: fit-content;
 }
@@ -254,11 +269,11 @@ ul li:first-child {
 .class-underTitle {
     margin: 0 auto;
     max-width: fit-content;
-    font-size:1.1vw;
+    font-size:0.8rem;
 }
 
 .card-text {
-    font-size:1vw;
+    font-size:1.2rem;
     text-align:center;
     width: fit-content;
     font-family: 'Courier New', monospace;
@@ -270,8 +285,8 @@ ul li:first-child {
 }
 
 .flip-card-back ul li {
-    padding: 6px 0;
-    font-size:1vw;
+    padding: 5px 0;
+    font-size:1.3rem;
     color: rgba(219, 216, 216, 0.767);
     word-break: keep-all;
 }
@@ -308,4 +323,176 @@ footer {
     justify-content: center;
     font-size:20px;
     background-color: #525e65;
+}
+
+@media screen and (max-width:1600px) {
+    #title #name {
+        font-size:9rem;
+
+    } 
+    .flip-card {
+        width: 16vw;
+        height: 380px;
+    }
+    .flip-card-back ul li {
+
+        font-size:1.1rem;
+    }
+    .card-text {
+        font-size:1.1rem;
+    }
+}
+@media screen and (max-width:1400px) {
+    .flip-card-back ul li {
+
+        font-size:1rem;
+    }
+    .card-text {
+        font-size:1rem;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #logoBTS img {
+        width:200px;
+        filter: invert(0%);
+    }
+    #title #name {
+        font-size:7rem;
+
+    } 
+
+    #photoCircle img {
+        width:200px;
+        height: 200px;
+    }
+
+    
+    .flip-card {
+        width: 12rem;
+        height: 310px;
+    }
+
+    .card-text {
+        font-size:0.9rem;
+    }
+    .flip-card-back ul li {
+
+        font-size:0.8rem;
+    }
+
+    #titleOptions p {
+        color:rgba(238, 230, 230, 0.89);
+        font-size:2.5rem;
+        font-family: 'Courier New', monospace;
+    }
+}
+
+@media screen and (max-width:900px) {
+    ul li {
+        font-size:15px;
+    }
+    #descriptionBTS p {
+        font-size:1.3rem;
+        max-width: 70vw;
+    }
+    #title #name {
+        font-size:6rem;
+        font-family: 'Source Code Pro', monospace!important;
+    
+    }
+    #title #subtitleName {
+        font-size:1.8rem;
+        font-family: 'Courier New', monospace!important;
+    }
+    .flip-card {
+        width: 12rem;
+        height: 310px;
+    }
+
+    .card-text {
+        font-size:0.8rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    ul li {
+        font-size:12px;
+    }
+    #descriptionBTS p {
+        font-size:1.3rem;
+        max-width: 70vw;
+    }
+
+    #title #name {
+        font-size:5rem;
+        font-family: 'Source Code Pro', monospace!important;
+    
+    }
+    #title #subtitleName {
+        font-size:1rem;
+        font-family: 'Courier New', monospace!important;
+    }
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .flip-card {
+        width: 12rem;
+        height: 310px;
+    }
+
+    .card-text {
+        font-size:0.8rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #title #name {
+        font-size:3rem;
+        font-family: 'Source Code Pro', monospace!important;
+    
+    }
+    #title #subtitleName {
+        font-size:1rem;
+        font-family: 'Courier New', monospace!important;
+    }
+    #photoCircle img {
+        width:150px;
+        height: 150px;
+    }
+
+    #description p {
+        font-size:1.2rem;
+        max-width: 70vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    ul li {
+        font-size:9px;
+    }
+    .flip-card {
+        width: 12rem;
+        height: 350px;
+    }
+    .flip-card-back ul li {
+        font-size:0.75rem;
+    }
+
+    .card-text {
+        font-size:0.9rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .card-logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .card-text {
+        font-size:1rem;
+    }
 }
