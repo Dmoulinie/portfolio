@@ -102,8 +102,8 @@
     <p>Organisation de l’application : </p>
 </div>
 
-<div id="orgaApp">
-    <p>
+<div>
+    <p class="textNormal">
         L’application est déployée sur un serveur Tomcat qui tourne sur un serveur AWS avec un serveur SQL.
         Elle fonctionnait avec le protocole http non sécurisé.
         Pour la sécuriser il a fallu se connecter sur le serveur AWS et ajouter un certificat Let’s Encrypt. <br>
@@ -121,25 +121,43 @@
 
 <div id="modifEff">
 
-    <h2 class="centrer">Petites modifications</h2>
+    <h2 class="centrer">Modifications</h2>
     <!-- espacer les puces -->
-    <p>
-         ○ Un bouton pour réouvrir une réunion précédemment fermée  <br>
-         ○ Une Checkbox pour autoriser les absents à voter <br>
-         ○ Une nouvelle page qui récupere la liste des votes par cercle
+    <div id="listModif">
+        <p class="texteListeModif">○ Un bouton pour réouvrir une réunion précédemment fermée</p>
+        <p class="texteListeModif">○ Une Checkbox pour autoriser les absents à voter</p>
+        <p class="texteListeModif">○ Une nouvelle page qui récupere la liste des votes par cercle</p>
+    </div>
 
-    </p>
-
-
+    <br>
     <h2 class="centrer">Mission principale</h2>
-    <p>
+    <p class="textNormal">
         La mission principale de mon stage était une intégration des utilisateurs avec Azure Active Directory.
         C’est-à-dire faire un lien entre l’AAD de SF2i et l’application web pour que le système de connexion
         fonctionne avec son identifiant dans l’AAD.
+        Pour faire cela il a fallu créer une application dans l’AAD de capteur, 
     </p>
-    <img src="img/aadConnect.png" alt="formulaire de login">
+    <img src="img/aadConnect.png" class="imgCentrer" alt="formulaire de login">
+</div>
+
+<div>
+    <p class="textNormal">
+        Pour faire cela il a fallu créer une application dans l’AD, j’ai donc contacté le consultant infrastructures qui m’a fourni les informations nécessaires :  <br>
+        Application ID : 2f36************************ <br>
+        Tenant ID : 5c97************************
+    </p>
+    <p class="textNormal">
+        Grâce à ça j’avais maintenant un accès “Read” de l’API de Microsoft Graph.
+        Je pouvais maintenant récupérer chaque utilisateur de l’AAD de SF2i
+        Puis je demande à l’API Microsoft Graph si le compte existe et est correct
+        Si je reçois une réponse convenable,
+        j’autorise le login afin qu’il accède à l’application en tant que membre.
+        Cela permet à chaque membre présent dans l’AAD de SF2i peut se connecter sur Capteur.
+    </p>
 </div>
 
 
 </body>
+<footer> <small>&copy; Copyright 2022, Dan Moulinie</small> </footer> 
+
 </html>
