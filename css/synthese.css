@@ -183,3 +183,35 @@
 .containerReunion:hover .overlayReunion {
     opacity: 1;
 }
+
+
+
+#orgaApp {
+
+}
+
+#orgaApp p {
+    color:rgba(238, 230, 230, 0.87);
+    font-size:1.2vw;
+    margin:0 auto;
+    margin-top:15px;
+    max-width: 49vw;
+    min-width: 25vw;
+    font-family: 'Courier New', monospace;
+    text-align:justify;
+    text-justify: inter-word;
+    padding-bottom: 5vh;
+}
+
+#modifEff p {
+    color:rgba(238, 230, 230, 0.87);
+    font-size:1.2vw;
+    margin:0 auto;
+    margin-top:15px;
+    max-width: 49vw;
+    min-width: 25vw;
+    font-family: 'Courier New', monospace;
+    text-align:justify;
+    text-justify: inter-word;
+    padding-bottom: 5vh;
+}
