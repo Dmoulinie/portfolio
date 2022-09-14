@@ -1,0 +1,36 @@
+#logoEntreprise {
+    height: 250px;
+    width: 250px;
+}
+
+#logoEntreprise:hover {
+    transform: scale(1.1);
+}
+
+#containerTextEntreprise {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+
+#textEntreprise {
+        color:rgba(238, 230, 230, 0.87);
+        font-size:1.5rem;
+        margin:0 auto;
+        margin-top:15px;
+        max-width: 30vw;
+        min-width: 25vw;
+        font-family: 'Courier New', monospace;
+        text-align:justify;
+        text-justify: inter-word;
+        padding-bottom: 5vh;
+}
+
+#presentationEntreprise {
+    display:flex;
+    flex-direction: row;
+    padding: 5rem 0 0 10rem;
+
+}
