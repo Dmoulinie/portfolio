@@ -1,0 +1,52 @@
+p, h1, h2, h3, h4, h5 {
+    color:rgba(238, 230, 230, 0.89);
+    font-family: 'Source Code Pro', monospace!important;
+    
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color: #242a36;
+}
+
+nav ul {
+    margin:0;
+    padding:0;
+    background-color: #525e65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+ul li {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    color:#cfdccb;
+    font-size: 20px;
+}
+
+ul li a {
+    font-family: 'Roboto', sans-serif;
+    color:#cfdccb;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    color: #73CCA8;
+    border-bottom: 4px solid #73CCA8;    
+}
+
+/*
+* mettre du padding sur tous les elements sauf le 1er
+*/
+ul li:not(:first-child) { 
+
+    padding: 0 10px;
+}
+ul li:first-child {
+    padding-right:10px;
+}

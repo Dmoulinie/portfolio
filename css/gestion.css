@@ -1,0 +1,50 @@
+#titleGestion {
+    color:rgba(238, 230, 230, 0.89);
+
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#defPatrimoine {
+    color:rgba(238, 230, 230, 0.89);
+
+    font-size:1.3rem;
+    margin:0 auto;
+    margin-top:15px;
+    max-width: 30vw;
+    min-width: 25vw;
+    font-family: 'Courier New', monospace;
+}
+#synthesePatrimoine {
+    color:rgba(238, 230, 230, 0.89);
+
+    font-size:1rem;
+    display: flex;
+    margin:0 auto;
+    justify-content: center;
+    max-width: 70rem;
+    font-family: 'Courier New', monospace;
+}
+
+
+
+#buttonGestion {
+    display:flex;
+    margin: 10px auto;
+    background-color: #58f0b3;
+    font-size:1rem;
+    border:none;
+    border-radius: 6px;
+    padding:10px;
+    cursor:pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+}
+#buttonGestion:hover {
+    transform: scale(1.1);
+}
+
+#buttonLien {
+    text-decoration: none;
+}
