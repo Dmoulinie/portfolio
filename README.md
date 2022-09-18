@@ -8,7 +8,7 @@ Lamp (Linux, Apache, MySQL, Php)
 Plusieurs virtual hosts
 Certbot pour le passage en HTTPS
 
-#Résultats attendus
+##Résultats attendus
 Installer un LAMP sur un VPS ovh et héberger mon portfolio avec un nom de domaine.
 
 #Résultats finaux
