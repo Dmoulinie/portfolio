@@ -3,7 +3,7 @@
 #Hébergement sur ovh
 https://www.ovhcloud.com/fr/
 
-#Technologies utilisées
+#Technologies utilisées <br>
 Lamp (Linux, Apache, MySQL, Php)
 Plusieurs virtual hosts
 Certbot pour le passage en HTTPS
