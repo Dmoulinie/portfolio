@@ -1,16 +1,16 @@
-# Portfolio
+# Portfolio <br>
 
-#Hébergement sur ovh
-https://www.ovhcloud.com/fr/
+## Hébergement sur ovh <br>
+https://www.ovhcloud.com/fr/ <br>
 
-#Technologies utilisées <br>
-Lamp (Linux, Apache, MySQL, Php)
-Plusieurs virtual hosts
-Certbot pour le passage en HTTPS
+## Technologies utilisées <br>
+Lamp (Linux, Apache, MySQL, Php) <br>
+Plusieurs virtual hosts <br>
+Certbot pour le passage en HTTPS <br>
 
-##Résultats attendus
-Installer un LAMP sur un VPS ovh et héberger mon portfolio avec un nom de domaine.
+## Résultats attendus <br>
+Installer un LAMP sur un VPS ovh et héberger mon portfolio avec un nom de domaine. <br>
 
-#Résultats finaux
-Nom de domaine : dmoulinie.me
-Lien du portfolio : portfolio.dmoulinie.me
+## Résultats finaux <br>
+Nom de domaine : dmoulinie.me <br>
+Lien du portfolio : portfolio.dmoulinie.me <br>
