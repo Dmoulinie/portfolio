@@ -1,3 +1,9 @@
+
+html{
+    position:relative; 
+    min-height: 100%;
+  }
+
 #titleGestion {
     color:rgba(238, 230, 230, 0.89);
 
@@ -16,22 +22,42 @@
     min-width: 25vw;
     font-family: 'Courier New', monospace;
 }
+
 #synthesePatrimoine {
     color:rgba(238, 230, 230, 0.89);
-
-    font-size:1rem;
-    display: flex;
+    font-size:1.2rem;
     margin:0 auto;
     justify-content: center;
     max-width: 70rem;
     font-family: 'Courier New', monospace;
 }
 
+.importantWord {
+    color:rgba(255, 76, 76, 0.89);
+    font-size:1.1rem;
+    font-family: 'Courier New', monospace;
+}
+
+br {
+    user-select: none;
+}
+
+#synthesePatrimoine a {
+    text-decoration: none;
+    color:rgba(116, 129, 255, 0.918);
+}
+
+#synthesePatrimoine a:hover {
+    color:rgba(81, 98, 255, 0.918);
+}
+
+#synthesePatrimoine a:active {
+    color:rgba(0, 179, 255, 0.918);
+}
 
 
 #buttonGestion {
     display:flex;
-    margin: 10px auto;
     background-color: #58f0b3;
     font-size:1rem;
     border:none;
@@ -43,8 +69,78 @@
 }
 #buttonGestion:hover {
     transform: scale(1.1);
+    background-color: #3ae09e;
+}
+
+#buttonGestion:active {
+    transform: scale(1.2);
+    background-color: #3ac48d;
 }
 
 #buttonLien {
+    margin: 10px auto;
+    display: flex;
+    width: fit-content;
     text-decoration: none;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:20px;
+}
+
+@media screen and (max-width:1400px) {
+    #defPatrimoine {
+        max-width: 40vw;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    #defPatrimoine {
+        max-width: 45vw;
+    }
+
+    #synthesePatrimoine {
+    
+        max-width: 50rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #defPatrimoine {
+        max-width: 55vw;
+    }
+
+    #synthesePatrimoine {
+    
+        max-width: 40rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #defPatrimoine {
+        max-width: 70vw;
+    }
+
+    #synthesePatrimoine {
+    
+        max-width: 35rem;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #defPatrimoine {
+        max-width: 75vw;
+    }
+
+    #synthesePatrimoine {
+    
+        max-width: 30rem;
+    }
 }

@@ -1,3 +1,9 @@
+
+html{
+    position:relative; 
+    min-height: 100%;
+  }
+
 #logoEntreprise {
     height: 250px;
     width: 250px;
@@ -34,4 +40,13 @@
     flex-direction: row;
     padding: 5rem 0 0 10rem;
 
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:20px;
 }
