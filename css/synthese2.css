@@ -39,7 +39,6 @@ html{
     display:flex;
     flex-direction: row;
     padding: 5rem 0 0 10rem;
-
 }
 
 
@@ -49,4 +48,21 @@ footer {
     left: 0;
     right: 0;
     height:20px;
+}
+
+
+
+#presentationProjet {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#presentationProjet img {
+    width: 20rem;
+    height: 10rem;
+}
+
+#presentationProjet p {
+    font-size:1.3rem;
+    margin: auto 3rem;
+    max-width: 45rem;
 }

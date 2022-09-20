@@ -70,6 +70,12 @@ ul li:first-child {
     font-family: 'Source Code Pro', monospace!important;
 }
 
+.center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #title p {
     font-size:1rem;
