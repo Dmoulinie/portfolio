@@ -45,7 +45,7 @@
     height: 4px;
     background-color:#525e65;
     position: absolute;
-    margin-top:3vh;
+    margin-top:1vh;
     left: 50%;
     transform: translate(-50%);
 }

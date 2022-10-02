@@ -29,6 +29,7 @@
             <li><a href="index.html" title="Contact">Contact</a></li>
         </ul>
     </nav>
+    <h1 class="title center">Présentation du projet</h1>
 
     <div id="presentationEntreprise">
         <a href="https://digit.nc/" target="_blank"><img src="img/digit.png" id="logoEntreprise" alt=""></a>
@@ -40,20 +41,97 @@
         </div>
     </div>
 
-    <h1 class="title center">Présentation du projet</h1>
     <div id="presentationProjet">
         <img src="img/dCapteur.png">
-        <p>
-            L'application Capteur est une application web développé en <a href="https://angular.io/" target="_blank">Angular</a>,
+        <p class="text-default">
+            L'application Capteur est une application web développé en <a href="https://angular.io/" class="lien" target="_blank">Angular</a>,
             anciennement en Java (JEE). Elle permet de réunir plusieurs services sous forme de cercle/carte.
         </p>
 
     </div>
 
+    <div id="titleLogiciels" class="title centrer">Technologies utilisés</div>
 
-<!-- faire des cartes/cercles "l'équipe" avec visage  // si pas de photo mettre photo facebook vide tavu le truc -->
+    
+    <div id="logiciels" class="centrer">
+        <div class="container">
+            <img src="img/angular.jpg" alt="" >
+            <div class="overlay">
+                <a href="https://angular.io/" target="_blank" class="textOverlayLogiciels">Angular</a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="img/Vscode.png" alt="">
+            <div class="overlay">
+                <a href="https://code.visualstudio.com/" target="_blank" class="textOverlayLogiciels">Vs Code</a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="img/teams.png" alt="" >
+            <div class="overlay">
+                <a href="https://www.microsoft.com/fr-fr/microsoft-teams/group-chat-software" target="_blank" class="textOverlayLogiciels">Teams</a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="img/firebase.png" alt="">
+            <div class="overlay">
+                <a href="https://firebase.google.com/" target="_blank" class="textOverlayLogiciels">Firebase</a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="img/gitlab.png" alt="">
+            <div class="overlay">
+                <a href="https://about.gitlab.com/" target="_blank" class="textOverlayLogiciels">Gitlab</a>
+            </div>
+        </div>      
+    </div>
+
+    
+
+    <div class="title centrer" id="titleAngularMVC">L'angular et l'approche MVC</div>
+    <div class="imgAndTextLeftToRight" id="angularMVC">
+        <img src="img/mvc.png" alt="">
+        <p class="text-default">
+            L'architecture MVC se compose de trois modules ou objets principaux à utiliser dans le développement de logiciels : <br> <br>
+
+            Un modèle représentant la structure logique sous-jacente des données dans une application logicielle,
+                ainsi que la classe supérieure qui y est associée.
+                Ce modèle d'objet ne contient aucune information sur l'interface utilisateur.  <br> <br>
+
+            * Une vue, autrement dit un ensemble de classes représentant les éléments de l'interface utilisateur
+                (tous ceux que l'utilisateur voit à l'écran et avec lesquels il peut interagir : boutons,
+                boîtes de dialogue, etc.). <br> <br>
+
+            * Un contrôleur représentant les classes qui se connectent au modèle et à la vue,
+                et servant à la communication entre les classes dans le modèle et la vue.
+        </p>
+    </div>
+
+<div class="smallTitle centrer">Organisation du projet</div>
+    <div>
+        <div id="containerOrganisation">
+            <div id="orga1">
+                <p class="text-default" id="textOrganisation">
+                    Au sein de mon projet, le modèle était des classes en TypeScript
+                </p>
+                <img src="img/capteurModele.png" alt="">
+            </div>
+            <div id="orga2">
+                <p class="text-default" id="textOrganisation">
+                    Au sein de mon projet, le modèle était des classes en TypeScript
+                </p>
+                <img src="img/capteurVueControlleur.png" alt="">
+            </div>
+        </div>
+    </div>
+     
+    <!--la vue était le DOM en HTML/CSS et le contrôleur était en Typescript également.  -->
+
+<!-- TODO faire des cartes/cercles "l'équipe" avec visage  // si pas de photo mettre photo facebook vide tavu le truc -->
     
 </body>
+<br>
+<br>
 <footer> <small>&copy; Copyright 2022, Dan Moulinie</small> </footer> 
 
 </html>
