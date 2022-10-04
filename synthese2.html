@@ -90,7 +90,7 @@
 
     <div class="title centrer" id="titleAngularMVC">L'angular et l'approche MVC</div>
     <div class="imgAndTextLeftToRight" id="angularMVC">
-        <img src="img/mvc2.png" alt="">
+        <img src="img/mvc2.png" alt="" id="imgMVC">
         <p class="text-default">
             L'architecture MVC se compose de trois modules ou objets principaux à utiliser dans le développement de logiciels : <br> <br>
 
@@ -107,27 +107,48 @@
         </p>
     </div>
 
-<div class="smallTitle centrer">Organisation du projet</div>
+    <div class="smallTitle centrer">Organisation du projet</div>
     <div>
         <div id="containerOrganisation">
-            <div id="orga1">
-                <p class="text-default" id="textOrganisation">
-                    Au sein de mon projet, le modèle était des classes en TypeScript
+            <div class="orgaElement">
+                <p class="text-default">
+                    Ce projet est développé en Angular et est donc orientée objet,
+                    le modèle de l'architecture MVC sont des classes en Typscript,
+                    elles permettent de travailler avec des objets précis
+                    et d'y assigner des fonctions.
                 </p>
                 <img src="img/capteurModele.png" alt="">
             </div>
-            <div id="orga2">
-                <p class="text-default" id="textOrganisation">
-                    Au sein de mon projet, le modèle était des classes en TypeScript
+            <div class="orgaElement">
+                <p class="text-default">
+                    L'arborescence du projet est organisé sous forme de component,
+                    dans chaque component se trouve un fichier html,css et typescript,
+                    le fichier typescript est le contrôleur et le reste la vue.
                 </p>
                 <img src="img/capteurVueControlleur.png" alt="">
             </div>
         </div>
     </div>
-     
-    <!--la vue était le DOM en HTML/CSS et le contrôleur était en Typescript également.  -->
+    
 
-<!-- TODO faire des cartes/cercles "l'équipe" avec visage  // si pas de photo mettre photo facebook vide tavu le truc -->
+    <div id="objectifStageTitle" class="center smallTitle">L'objectif du stage</div>
+    <div class="objectifStage">
+        <p class="text-default">
+            Lors de ce stage de 6 semaines, j'ai du m'autoformer à l'Angular.
+            Notamment grâce au
+            <a  href="https://openclassrooms.com/fr/courses/7471261-debutez-avec-angular"
+                class="lien"
+                target="_blank">cours d'Openclassroom</a> sur comment débuter avec Angular.
+            Puis j'ai reproduis une page du site
+            afin de voir le CRUD(Create, Read, Update, Delete). Toutes les données sont stockées
+            dans une base de donnée NoSQL(<a href="https://firebase.google.com/" class="lien">Firebase</a>).
+            <br><br>
+            Je me suis ensuite intéressé a l'application actuelle, en collaboration avec un autre stagiaire
+
+
+        </p>
+    </div>
+
     
 </body>
 <br>
