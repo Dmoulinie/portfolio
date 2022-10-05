@@ -1,0 +1,21 @@
+#text-quizz {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 60vw;
+    margin-top: 10px;
+}
+
+#presentationApp {
+    margin: 0 auto;
+    max-width: 60vw;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#troisTier {
+    display:flex;
+    flex-direction: column;
+}

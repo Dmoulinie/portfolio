@@ -50,3 +50,26 @@ ul li:not(:first-child) {
 ul li:first-child {
     padding-right:10px;
 }
+
+
+
+#logosVeille {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 5vw;
+    justify-content: space-evenly;
+}
+
+#logo-rss {
+    width: 500px;
+    height: 250px;
+}
+#logo-alert {
+    width: 500px;
+    height: 250px;
+}
+#logo-news {
+    width: 500px;
+    height: 250px;
+}
