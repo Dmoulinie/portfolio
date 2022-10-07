@@ -58,9 +58,38 @@ function setLink($filename) {
         <div id="navButtonLine1"></div>
         <div id="navButtonLine2"></div>
         <div id="navButtonLine3"></div>
+        <div id="navButtonLine3"></div>
+        <div id="navButtonLine4"></div>
+        <div id="navButtonLine5"></div>
     </div>
 
 <style>
+    /*TODO : Animer la fleche */
+    @keyframes fleche1 {
+        
+        0% { top:-150px;}		
+        100% { top:-20px; }
+    }
+
+    @keyframes fleche2 {
+        0% { top:-150px;}		
+        100% { top:-15px; }
+    }
+
+    @keyframes fleche3 {
+        0% { top:-150px;}		
+        100% { top:-10px; }
+    }
+
+    @keyframes fleche4 {
+        0% { top:-150px;}		
+        100% { top:-5px; }
+    }
+
+    @keyframes fleche5 {
+        0% { top:-150px; }		
+        100% { top:0px; }	
+    }
 
     /* TODO navbar responsive /mobile */
     @media screen and (max-width: 478px) {
@@ -68,7 +97,33 @@ function setLink($filename) {
             display: none;
         }
 
+
         #navButtonLine1 {
+            height: 110px;
+            width: 110px;
+            background-color: #58f0b3;
+            position: absolute;
+            top:-25px;
+            left:50%;
+            transform:rotate(45deg) translate(-50%, 8.5%);
+            z-index: 1;
+            animation: fleche1 4s ;
+            
+        }
+
+        #navButtonLine2 {
+            height: 80px;
+            width: 80px;
+            background-color: #242a36;
+            position: absolute;
+            top:-15px;
+            left:50%;
+            transform:rotate(45deg) translate(-50%, 4.5%);
+            z-index: 2;
+            animation: fleche2 4s ;
+        }
+
+        #navButtonLine3 {
             height: 60px;
             width: 60px;
             background-color: #58f0b3;
@@ -76,9 +131,10 @@ function setLink($filename) {
             top:-10px;
             left:50%;
             transform:rotate(45deg) translate(-50%, -1%);
-            z-index: 1;
-        }
-        #navButtonLine2 {
+            z-index: 3;
+            animation: fleche3 4s ;
+        } 
+        #navButtonLine4 {
             height: 40px;
             width: 40px;
             background-color: #242a36;
@@ -86,19 +142,23 @@ function setLink($filename) {
             top:-5px;
             left:50%;
             transform:rotate(45deg) translate(-50%, -12%);
-            z-index: 2;
-        }
+            z-index: 4;
+            animation: fleche4 4s ;
+        } 
 
-        #navButtonLine3 {
+        #navButtonLine5 {
             height: 20px;
             width: 20px;
             background-color: #58f0b3;
             position: absolute;
             top:0px;
             left:50%;
-            transform:rotate(45deg) translate(-50%, -45%);
-            z-index: 3;
+            transform:rotate(45deg) translate(-50%, -45%); /* -45% */
+            z-index: 5;
+            animation: fleche5 4s ;
         }
+
+
 
 
     }

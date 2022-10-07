@@ -465,7 +465,13 @@ footer {
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:478px) {
+
+    #title {
+        padding-top:12vh;
+        
+    }
+
     ul li {
         font-size:9px;
     }
