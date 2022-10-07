@@ -21,28 +21,9 @@
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html" title="Accueil">Accueil</a></li>
-            <li><a href="../leBTS.html" title="Etudes">Le BTS</a></li>
-            <div class="dropdown">
-                <button class="dropbtn">Projets<span class="material-symbols-outlined" style="position: absolute;">keyboard_arrow_down</span></button>
-                <div class="dropdown-content">
-                  <a href="https://garage.dmoulinie.me" target="_blank">Garage</a>
-                  <a href="/projets/quizzJava.html">Quizz Java</a>
-                  <a href="/projets/quizzAndroid.html">Quizz Android</a>
-                  <a href="/projets/hebergementPortfolio.html">Hébergement PortFolio</a>
-                </div>
-              </div>
-            <li></li>
-            <li><a href="../veille.html" title="Veille">Veille</a></li>
-            <li><a href="../synthese1.html" title="Synthese 1">Synthèse premiere année</a></li>
-            <li><a href="../synthese2.html" title="Synthese 2">Synthèse deuxième année</a></li>
-            <li><a href="../cv.html" title="C.V">Curriculum Vitae</a></li>
-            <li><a href="../gestionPatrimoine.html" title="Gestion du patrimoine">Gestion du patrimoine</a></li>
-            <li><a href="../index.html" title="Contact">Contact</a></li>
-        </ul>
-    </nav>
+    <?php
+        include 'includes/navbar.php';
+    ?>
 
 
 
