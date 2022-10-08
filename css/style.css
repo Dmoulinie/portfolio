@@ -14,46 +14,6 @@ body {
     background-color: #242a36;
 }
 
-nav ul {
-    margin:0;
-    padding:0;
-    background-color: #525e65;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-}
-
-ul li {
-    font-family: 'Roboto', sans-serif;
-    list-style-type: none;
-    color:#cfdccb;
-    font-size: 20px;
-}
-
-ul li a {
-    font-family: 'Roboto', sans-serif;
-    color:#cfdccb;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    font-family: 'Roboto', sans-serif;
-    list-style-type: none;
-    color: #73CCA8;
-    border-bottom: 4px solid #73CCA8;    
-}
-
-/*
-* mettre du padding sur tous les elements sauf le 1er
-*/
-ul li:not(:first-child) { 
-
-    padding: 0 10px;
-}
-ul li:first-child {
-    padding-right:10px;
-}
 
 #title {
     display:flex;
@@ -68,78 +28,8 @@ ul li:first-child {
 }
 
 
-.dropbtn {
-    font-family: 'Roboto', sans-serif;
-    background-color: #525e65;
-    color: #cfdccb;
-    border: none;
-    font-size: 20px;
-
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #595c5f;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-  }
-  
-  .dropdown-content a:hover {background-color: rgb(167, 167, 167);}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {
-    border-bottom: 4px solid #73CCA8;   
-}
-
-.bigTitle {
-    color:rgba(238, 230, 230, 0.87);
-    font-size:3rem;
-    /* font-family: 'Courier New', monospace; */
-    font-family: "Josefin Sans",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.125em;
-}
 
 
-.title {
-    color:rgba(238, 230, 230, 0.87);
-    font-size:2rem;
-    /* font-family: 'Courier New', monospace; */
-    font-family: "Josefin Sans",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.125em;
-}
-
-.smallTitle {
-    margin-top:2vh;
-    color:rgba(238, 230, 230, 0.87);
-    font-size:1.5rem;
-    /* font-family: 'Courier New', monospace; */
-    font-family: "Josefin Sans",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.125em;
-}
 
 
 #title #name {
@@ -228,7 +118,7 @@ ul li:first-child {
 .button {
     background-color: #58f0b3;
     font-size:1rem;
-    border:nonew;
+    border:none;
     border-radius: 6px;
     padding:10px;
     cursor:pointer;
@@ -492,9 +382,11 @@ footer {
 }
 
 @media screen and (max-width:900px) {
-    ul li {
+    ul li, .dropbtn {
         font-size:15px;
     }
+
+
     #descriptionBTS p {
         font-size:1.3rem;
         max-width: 70vw;
@@ -573,7 +465,13 @@ footer {
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:478px) {
+
+    #title {
+        padding-top:12vh;
+        
+    }
+
     ul li {
         font-size:9px;
     }

@@ -1,0 +1,66 @@
+<?php
+define('documentRoot','http://'.$_SERVER['SERVER_NAME'] . '/'); 
+
+function setLink($filename) {
+    return documentRoot . $filename;
+}
+?>
+
+<link rel="stylesheet" type="text/css" href="../css/navbar.css">
+<link rel="stylesheet" type="text/css" href="<?php echo setLink("css/root.css")?>">
+<div id="backgroundNav"></div>
+<nav id="navbar" >
+        <ul id="navbar-list" class="nav-off">
+            <li><a href="<?php echo setLink('index')?>" title="Accueil">Accueil</a></li>
+
+            <!-- Dropdown BTS -->
+            <div class="dropdown"> 
+                    <button class="dropbtn" id="btsButton">
+                        BTS SIO<span class="material-symbols-outlined" style="user-select:none">keyboard_arrow_down</span>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="<?php echo setLink('leBTS')?>" title="Etudes">A propos</a>
+
+                    <div class= "dropdownRight">
+                        <a id="projects" title="Projets" style="cursor:pointer;">
+                            Projets <span class="material-symbols-outlined" id="rightArrowDropdown" style="user-select:none">keyboard_arrow_right</span>
+                        </a>
+                        <div class="dropdown-content-right">
+                            <a href="https://garage.dmoulinie.me" target="_blank">Garage</a>
+                            <a href="<?php echo setLink('projets/quizzJava')?>">Quizz Java</a>
+                            <a href="<?php echo setLink('projets/quizzAndroid')?>">Quizz Android</a>
+                            <a href="<?php echo setLink('projets/hebergementPortfolio')?>">Hébergement</a>
+                        </div>
+                    </div>
+                    
+                    <a href="<?php echo setLink('veille')?>" projectstitle="Veille">Veille</a>
+                    <div class="dropdownRight">
+                        <a id="projects" title="Projets" style="cursor:pointer;">
+                            Stages <span class="material-symbols-outlined" id="rightArrowDropdown" style="user-select:none">keyboard_arrow_right</span>
+                        </a>
+                        <div class="dropdown-content-right">
+                            <a href="<?php echo setLink('synthese2')?>" title="Synthese 2">2022 - Digit</a>
+                            <a href="<?php echo setLink('synthese1')?>" title="Synthese 1">2021 - Digit</a>
+                        </div>
+                    </div>
+                    
+                    <a href="<?php echo setLink('gestionPatrimoine')?>" title="Gestion du patrimoine">Gestion du patrimoine</a>
+                </div>
+            </div>  
+            <!-- Fin Dropdown BTS  -->
+
+
+            <li><a href="<?php echo setLink('cv')?>" title="C.V">A propos de moi</a></li>
+            <li><a href="<?php echo setLink('index')?>" title="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <img src="<?php echo setLink('img/logo_green_dan2.png')?>" id="logoSite" alt="">
+
+    <div id="menuNavbarClose">
+        <span class="material-symbols-outlined"  style="user-select:none">close</span>
+    </div>
+    <div id="menuNavbarOpen">
+        <span class="material-symbols-outlined" id="menuButton" style="user-select:none">menu</span>
+    </div>
+<script src="<?php echo setLink('js/navbar.js')?>"></script>

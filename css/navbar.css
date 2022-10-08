@@ -1,0 +1,206 @@
+
+nav ul {
+    margin:0;
+    padding:0;
+    background-color: #525e65;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+
+ul li {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    color:#cfdccb;
+    font-size: 20px;
+}
+
+ul li a {
+    font-family: 'Roboto', sans-serif;
+    color:#cfdccb;
+    text-decoration: none;
+
+}
+
+ul li a:hover {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    color: #73CCA8;
+    border-bottom: 4px solid #73CCA8;    
+}
+
+
+
+/*
+* mettre du padding sur tous les elements sauf le 1er
+*/
+ul li:not(:first-child) { 
+
+    padding: 0 10px;
+}
+ul li:first-child {
+    padding-right:10px;
+}
+
+.dropbtn {
+    font-family: 'Roboto', sans-serif;
+    background-color: #525e65;
+    color: #cfdccb;
+    border: none;
+    font-size: 20px;
+
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #595c5f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(167, 167, 167);}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {border-bottom: 4px solid #73CCA8;}
+
+
+  .dropdownRight {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+
+  .dropdownRight:hover .dropdown-content-right {
+    display:block;
+  }
+
+  .dropdown-content-right {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top:0;
+    background-color: #7d7f83;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+  }
+
+
+
+#projects {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#btsButton {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#menuNavbarOpen {
+  display: none;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  z-index: 999;
+}
+#menuNavbarOpen span {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px;
+  color:#cfdccb;
+
+}
+
+#menuNavbarClose {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+#menuNavbarClose span {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+
+#logoSite {
+  position: absolute;
+  top:2px;
+  left:5px;
+  width: 45px;
+  height: 45px;
+  z-index: 11;
+}
+
+#backgroundNav {
+  display:none;
+  background-color: #525e65;
+  width: 100%;
+  position: absolute;
+  top:0;
+  height: 50px;
+}
+
+.nav-on {
+  display: flex!important;
+}
+
+.nav-off {
+  display: none;
+}
+
+
+@media screen and (max-width: 578px) {
+  nav ul {
+      display: none!important;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100vw;
+      height: 30vh;
+      z-index: 10;
+      gap: 40px;
+  }
+
+
+  #backgroundNav {
+      display:block
+  }
+
+  #menuNavbarOpen {
+    display: block;
+  }
+
+
+
+}
