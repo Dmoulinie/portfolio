@@ -32,11 +32,11 @@
             </p>
         </div>
         <div id="presentationApp">
-            <img src="img/askQuestion.png" alt="">
-            <img src="img/askReponse.png" alt="">
-            <img src="img/displayScore.png" alt="">
-            <img src="" alt="">
+            <img src="img/askQuestion.png" alt="" id="img1">
+            <img src="img/askReponse.png" alt="" id="img2">
         </div>
+        <img src="img/displayScore.png" alt="" id="img3">
+        
         <div id="troisTier"class="center" style="margin-top:5vh;">
             <h1 class="title">3-tier</h2>
             <p class="text-default">L'application est organisé en 3 parties : </p>
