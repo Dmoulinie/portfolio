@@ -7,7 +7,7 @@ function setLink($filename) {
 ?>
 
 <link rel="stylesheet" type="text/css" href="../css/navbar.css">
-<link rel="stylesheet" type="text/css" href="<?php echo setLink("css/root.css")?>">
+<link rel="stylesheet" type="text/css" href="../css/root.css">
 <div id="backgroundNav"></div>
 <nav id="navbar" >
         <ul id="navbar-list" class="nav-off">
@@ -63,4 +63,4 @@ function setLink($filename) {
     <div id="menuNavbarOpen">
         <span class="material-symbols-outlined" id="menuButton" style="user-select:none">menu</span>
     </div>
-<script src="<?php echo setLink('js/navbar.js')?>"></script>
+<script src="../js/navbar.js"></script>
