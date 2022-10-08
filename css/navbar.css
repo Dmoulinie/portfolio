@@ -3,7 +3,7 @@ nav ul {
     margin:0;
     padding:0;
     background-color: #525e65;
-    display: flex;
+    display: flex!important;
     align-items: center;
     justify-content: center;
     height: 50px;
@@ -119,4 +119,88 @@ ul li:first-child {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+
+#menuNavbarOpen {
+  display: none;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  z-index: 999;
+}
+#menuNavbarOpen span {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px;
+  color:#cfdccb;
+
+}
+
+#menuNavbarClose {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+#menuNavbarClose span {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+
+#logoSite {
+  position: absolute;
+  top:2px;
+  left:5px;
+  width: 45px;
+  height: 45px;
+  z-index: 11;
+}
+
+#backgroundNav {
+  display:none;
+  background-color: #525e65;
+  width: 100%;
+  position: absolute;
+  top:0;
+  height: 50px;
+}
+
+.nav-on {
+  display: flex!important;
+}
+
+.nav-off {
+  display: none;
+}
+
+
+@media screen and (max-width: 578px) {
+  nav ul {
+      display: none!important;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100vw;
+      height: 30vh;
+      z-index: 10;
+      gap: 40px;
+  }
+
+
+  #backgroundNav {
+      display:block
+  }
+
+  #menuNavbarOpen {
+    display: block;
+  }
+
+
+
 }

@@ -7,8 +7,10 @@ function setLink($filename) {
 ?>
 
 <link rel="stylesheet" type="text/css" href="../css/navbar.css">
-<nav id="navbar">
-        <ul>
+<link rel="stylesheet" type="text/css" href="<?php echo setLink("css/root.css")?>">
+<div id="backgroundNav"></div>
+<nav id="navbar" >
+        <ul id="navbar-list" class="nav-off">
             <li><a href="<?php echo setLink('index')?>" title="Accueil">Accueil</a></li>
 
             <!-- Dropdown BTS -->
@@ -19,7 +21,7 @@ function setLink($filename) {
                 <div class="dropdown-content">
                     <a href="<?php echo setLink('leBTS')?>" title="Etudes">A propos</a>
 
-                    <div class="dropdownRight">
+                    <div class= "dropdownRight">
                         <a id="projects" title="Projets" style="cursor:pointer;">
                             Projets <span class="material-symbols-outlined" id="rightArrowDropdown" style="user-select:none">keyboard_arrow_right</span>
                         </a>
@@ -53,114 +55,12 @@ function setLink($filename) {
         </ul>
     </nav>
 
+    <img src="<?php echo setLink('img/logo_green_dan2.png')?>" id="logoSite" alt="">
 
-    <div id="navButton">
-        <div id="navButtonLine1"></div>
-        <div id="navButtonLine2"></div>
-        <div id="navButtonLine3"></div>
-        <div id="navButtonLine3"></div>
-        <div id="navButtonLine4"></div>
-        <div id="navButtonLine5"></div>
+    <div id="menuNavbarClose">
+        <span class="material-symbols-outlined"  style="user-select:none">close</span>
     </div>
-
-<style>
-    /*TODO : Animer la fleche */
-    @keyframes fleche1 {
-        
-        0% { top:-150px;}		
-        100% { top:-20px; }
-    }
-
-    @keyframes fleche2 {
-        0% { top:-150px;}		
-        100% { top:-15px; }
-    }
-
-    @keyframes fleche3 {
-        0% { top:-150px;}		
-        100% { top:-10px; }
-    }
-
-    @keyframes fleche4 {
-        0% { top:-150px;}		
-        100% { top:-5px; }
-    }
-
-    @keyframes fleche5 {
-        0% { top:-150px; }		
-        100% { top:0px; }	
-    }
-
-    /* TODO navbar responsive /mobile */
-    @media screen and (max-width: 478px) {
-        #navbar {
-            display: none;
-        }
-
-
-        #navButtonLine1 {
-            height: 110px;
-            width: 110px;
-            background-color: #58f0b3;
-            position: absolute;
-            top:-25px;
-            left:50%;
-            transform:rotate(45deg) translate(-50%, 8.5%);
-            z-index: 1;
-            animation: fleche1 4s ;
-            
-        }
-
-        #navButtonLine2 {
-            height: 80px;
-            width: 80px;
-            background-color: #242a36;
-            position: absolute;
-            top:-15px;
-            left:50%;
-            transform:rotate(45deg) translate(-50%, 4.5%);
-            z-index: 2;
-            animation: fleche2 4s ;
-        }
-
-        #navButtonLine3 {
-            height: 60px;
-            width: 60px;
-            background-color: #58f0b3;
-            position: absolute;
-            top:-10px;
-            left:50%;
-            transform:rotate(45deg) translate(-50%, -1%);
-            z-index: 3;
-            animation: fleche3 4s ;
-        } 
-        #navButtonLine4 {
-            height: 40px;
-            width: 40px;
-            background-color: #242a36;
-            position: absolute;
-            top:-5px;
-            left:50%;
-            transform:rotate(45deg) translate(-50%, -12%);
-            z-index: 4;
-            animation: fleche4 4s ;
-        } 
-
-        #navButtonLine5 {
-            height: 20px;
-            width: 20px;
-            background-color: #58f0b3;
-            position: absolute;
-            top:0px;
-            left:50%;
-            transform:rotate(45deg) translate(-50%, -45%); /* -45% */
-            z-index: 5;
-            animation: fleche5 4s ;
-        }
-
-
-
-
-    }
-        
-</style>
+    <div id="menuNavbarOpen">
+        <span class="material-symbols-outlined" id="menuButton" style="user-select:none">menu</span>
+    </div>
+<script src="<?php echo setLink('js/navbar.js')?>"></script>
