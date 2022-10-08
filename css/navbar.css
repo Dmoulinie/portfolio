@@ -90,13 +90,11 @@ ul li:first-child {
   }
 
 
-  .dropdownRight:hover .dropdownRight:active .dropdown-content-right {
+  .dropdownRight:hover  .dropdown-content-right {
     display:block;
   }
 
-  .projects:hover .dropdown-content-right {
-    display: block;
-  }
+
 
   .dropdown-content-right {
     display: none;
