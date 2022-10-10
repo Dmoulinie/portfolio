@@ -39,13 +39,21 @@
         
         <div id="troisTier"class="center" style="margin-top:5vh;">
             <h1 class="title">3-tier</h2>
-            <p class="text-default">L'application est organisé en 3 parties : </p>
-            <p> ● Data : Communique avec la base de donnée</p>
-            <p>
-                ● Entreprise : Effectue les calculs et prend les décisions
-                puis renvoie les données
-            </p>
-            <p> ● IHM : Affichage utilisateur</p>
+
+
+
+            <div id="tier-orga">
+                <p class="text-default">L'application est organisé en 3 parties : </p>
+            </div>
+            <div id="description-3tier">
+
+                <p> ● Data : Communique avec la base de donnée</p>
+                <p>
+                    ● Entreprise : Effectue les calculs et prend les décisions
+                    puis renvoie les données
+                </p>
+                <p> ● IHM : Affichage utilisateur</p>
+            </div>
             <img src="img/3tier.png" alt="">
         </div>
 <br><br><br><br><br><br>

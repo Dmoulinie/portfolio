@@ -52,13 +52,7 @@ body {
 
 }
 
-.text-default {
-    color:rgba(238, 230, 230, 0.87);
-    font-size:1.5rem;
-    font-family: 'Courier New', monospace;
-    text-align:justify;
-    text-justify: inter-word;
-}
+
 
 #title #subtitleName {
     font-size:2rem;

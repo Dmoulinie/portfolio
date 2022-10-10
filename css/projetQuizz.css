@@ -20,6 +20,10 @@
     align-items: center;
 }
 
+#description-3tier {
+    text-align: center;
+}
+
 #img3 {
     max-width: 60vw;
     height: 150px;
@@ -47,6 +51,16 @@
 
         gap: 50px;
     }
+
+    #tier-orga {
+        max-width: 75vw;
+    }
+
+    .text-default {
+        text-align: center!important;
+    }
+
+
     #img1 {
         height: 150px;
         width: 350px;
@@ -72,6 +86,9 @@
     #titleJava h1 {
         margin-top:10vh;
         font-size:1.5rem;
+    }
+    #titleJava {
+        text-align: center;
     }
 
     #text-quizz {

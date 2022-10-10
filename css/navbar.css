@@ -62,9 +62,9 @@ ul li:first-child {
     display: none;
     position: absolute;
     background-color: #595c5f;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    animation: fadeIn 1s ;
   }
   
   .dropdown-content a {
@@ -87,7 +87,14 @@ ul li:first-child {
     position: relative;
     display: inline-block;
     width: 100%;
+
   }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
 
 
   .dropdownRight:hover  .dropdown-content-right {
@@ -107,7 +114,13 @@ ul li:first-child {
     z-index: 1;
   }
 
-
+  #stages {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
 #projects {
     position: relative;
@@ -264,5 +277,6 @@ ul li:first-child {
     height: 25px;
     border-radius: 50%;
   }
+
 
 }

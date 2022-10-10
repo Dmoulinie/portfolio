@@ -36,7 +36,7 @@ function setLink($filename) {
                     
                     <a href="<?php echo setLink('veille.php')?>" projectstitle="Veille">Veille</a>
                     <div class="dropdownRight">
-                        <a id="projects" title="Projets" style="cursor:pointer;">
+                        <a id="stages" title="Stages" style="cursor:pointer;">
                             Stages <span class="material-symbols-outlined" id="rightArrowDropdown" style="user-select:none">keyboard_arrow_right</span>
                         </a>
                         <div class="dropdown-content-right">
