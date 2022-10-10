@@ -446,6 +446,7 @@ footer {
 
 @media screen and (max-width:600px) {
     #title #name {
+        padding-top:2vh;
         font-size:3rem;
         font-family: 'Source Code Pro', monospace!important;
     
@@ -468,7 +469,7 @@ footer {
 @media screen and (max-width:478px) {
 
     #title {
-        padding-top:12vh;
+        padding-top:5vh;
         
     }
     .cards {

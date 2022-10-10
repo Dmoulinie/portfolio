@@ -9,14 +9,15 @@ function setLink($filename) {
 <link rel="stylesheet" type="text/css" href="../css/navbar.css">
 <link rel="stylesheet" type="text/css" href="../css/root.css">
 <div id="backgroundNav"></div>
-<nav id="navbar" >
+<nav id="navbar">
         <ul id="navbar-list" class="nav-off">
             <li><a href="<?php echo setLink('index.php')?>" title="Accueil">Accueil</a></li>
 
             <!-- Dropdown BTS -->
             <div class="dropdown"> 
                     <button class="dropbtn" id="btsButton">
-                        BTS SIO<span class="material-symbols-outlined" style="user-select:none">keyboard_arrow_down</span>
+                        BTS SIO
+                        <span class="material-symbols-outlined" style="user-select:none" id="btsButtonArrow">keyboard_arrow_down</span>
                     </button>
                 <div class="dropdown-content">
                     <a href="<?php echo setLink('leBTS.php')?>" title="Etudes">A propos</a>
@@ -52,14 +53,20 @@ function setLink($filename) {
 
             <li><a href="<?php echo setLink('cv.php')?>" title="C.V">A propos de moi</a></li>
             <li><a href="<?php echo setLink('index.php')?>" title="Contact">Contact</a></li>
+            <div id="reseaux">
+                <a href="https://github.com/Dmoulinie">
+                    <img src="../img/GitHub.png" alt="">
+                </a>
+
+                <a href="">
+                    <img src="../img/linkedIn.png" style="filter:invert(100%)" alt="">
+                </a>
+            </div>
         </ul>
     </nav>
 
     <img src="<?php echo setLink('img/logo_green_dan2.png')?>" id="logoSite" alt="">
 
-    <div id="menuNavbarClose">
-        <span class="material-symbols-outlined"  style="user-select:none">close</span>
-    </div>
     <div id="menuNavbarOpen">
         <span class="material-symbols-outlined" id="menuButton" style="user-select:none">menu</span>
     </div>

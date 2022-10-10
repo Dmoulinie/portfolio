@@ -74,4 +74,8 @@ br {
 
 .lock-scroll {
     overflow: hidden;
+}
+
+.lock-scroll-off {
+    overflow: unset;
   }

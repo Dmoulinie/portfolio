@@ -180,6 +180,10 @@ ul li:first-child {
   display: none;
 }
 
+#reseaux {
+  display: none;
+}
+
 
 @media screen and (max-width: 578px) {
   nav ul {
@@ -189,9 +193,11 @@ ul li:first-child {
       top: 0;
       right: 0;
       width: 100vw;
-      height: 300px;
+      height: fit-content;
       z-index: 10;
-      gap: 40px;
+      gap: 35px;
+      padding: 5vh 0 5vh 0;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
   }
 
 
@@ -203,6 +209,60 @@ ul li:first-child {
     display: block;
   }
 
+  
 
+
+  .dropdown-content, .dropdownRight {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: rgb(71, 70, 70);
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .dropdownRight:hover  .dropdown-content-right {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown-content-right {
+    position: unset;
+    left: 100%;
+    top:0;
+    background-color: #7d7f83;
+    min-width: 100vw;
+    box-shadow: none;
+    z-index: 1;
+  }
+
+
+  .dropdown:hover .dropdown-content, .dropdownRight {
+    display: flex;
+    transition: all ease-out 100ms
+  }
+
+
+  .dropdown:hover .dropbtn {border-bottom: none}
+
+  .dropbtn {
+    margin:0 auto;
+  }
+
+
+  #reseaux {
+    display: flex;
+    flex-direction: row;
+    gap:5vw;
+
+  }
+  #reseaux a img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
 
 }
