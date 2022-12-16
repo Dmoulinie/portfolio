@@ -1,5 +1,5 @@
 <?php
-define('documentRoot',''.$_SERVER['SERVER_NAME'] . '/'); 
+define('documentRoot','/'); 
 
 function setLink($filename) {
     return documentRoot . $filename;
