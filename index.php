@@ -34,8 +34,9 @@
         <p>
             Bonjour vous êtes arrivés sur mon
             portfolio, je suis un étudiant en
-            BTS SIO qui souhaite s'orienter
-            vers le développement web.
+            Licence informatique a l'UNC qui
+            souhaite s'orienter vers le
+            développement web.
             <!--  web en
             licence en alternance à l'UNC puis
             un diplôme d'ingénieur. -->
@@ -43,7 +44,7 @@
     </div>
 
     <div class="buttons">
-        <a href="leBTS.html"><button class="button" title="En savoir plus">Le BTS SIO</button></a>
+        <a href="leBTS.php"><button class="button" title="En savoir plus">Le BTS SIO</button></a>
         <button class="button" title="Me contacter">Me contacter</button>
     </div>
 </body>

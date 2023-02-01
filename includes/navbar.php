@@ -27,7 +27,7 @@ function setLink($filename) {
                             Projets <span class="material-symbols-outlined" id="rightArrowDropdown" style="user-select:none">keyboard_arrow_right</span>
                         </a>
                         <div class="dropdown-content-right">
-                            <a href="https://garage.dmoulinie.me" target="_blank">Garage</a>
+                            <!-- <a href="https://garage.dmoulinie.me" target="_blank">Garage</a> -->
                             <a href="<?php echo setLink('projets/quizzJava.php')?>">Quizz Java</a>
                             <a href="<?php echo setLink('projets/quizzAndroid.php')?>">Quizz Android</a>
                             <a href="<?php echo setLink('projets/hebergementPortfolio.php')?>">Hébergement</a>
